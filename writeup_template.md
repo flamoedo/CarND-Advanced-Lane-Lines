@@ -90,18 +90,20 @@ I verified that my perspective transform was working as expected by drawing the 
 #### 4. Identified lane-line pixels and fit their positions with a polynomial.
 
 Then in cell 16 of notebook, the function `detect_lanes()` uses a polinomial to draw the lane lines detect on the image.
-There are also a fuction called `detect_lanes_next_frame()`, that is used after the firt detection, to improve the performance retricting the search area.
-Wen the lines become not parallel, the first detection is applied again. This process can be seen in the line 378 of the file `detect_lanes.py`
+There are also a fuction called `detect_lanes_next_frame()`, that is used after the first detection, to improve the performance, restricting the search area.
+When the lines become not parallel, the first detection is applied again. This process can be seen in the line 378 of the file `detect_lanes.py`
 
 ![alt text][image5]
 
-#### 5. Describe how (and identify where in your code) you calculated the radius of curvature of the lane and the position of the vehicle with respect to center.
+#### 5. Calculate the radius of curvature of the lane and the position of the vehicle with respect to center.
 
-I did this in lines # through # in my code in `my_other_file.py`
+I did this in the cell 23 and 25 of the notebook.
 
-#### 6. Provide an example image of your result plotted back down onto the road such that the lane area is identified clearly.
+#### 6. Result plotted back down onto the road such that the lane area is identified clearly.
 
-I implemented this step in lines # through # in my code in `yet_another_file.py` in the function `map_lane()`.  Here is an example of my result on a test image:
+I implemented this step in the cell 27 of the notebook.  
+To process the video, I implemented a function called `pipeline()` in the line 348 of the file `detect_lanes.py`
+Here is an example of my result on a test image:
 
 ![alt text][image6]
 
@@ -109,9 +111,7 @@ I implemented this step in lines # through # in my code in `yet_another_file.py`
 
 ### Pipeline (video)
 
-#### 1. Provide a link to your final video output.  Your pipeline should perform reasonably well on the entire project video (wobbly lines are ok but no catastrophic failures that would cause the car to drive off the road!).
-
-Here's a [link to my video result](./project_video.mp4)
+Here's a [link to my video result](./output_images/project_video_output.mp4)
 
 ---
 
