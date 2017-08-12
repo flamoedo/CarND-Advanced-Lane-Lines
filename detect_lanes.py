@@ -375,7 +375,7 @@ def pipeline(img):
         
     # Detect Lines
     # Look ahead
-    if(True):
+    if(first_frame):
     
         first_frame = False
         leftx, lefty, rightx, righty, left_fit, right_fit, _, _, left_fitx, right_fitx, ploty = detect_lanes(combined_binary)
