@@ -112,6 +112,7 @@ Here is an example of my result on a test image:
 ### Pipeline (video)
 
 Here's a [link to my video result](./output_images/project_video_output.mp4)
+[![IMAGE ALT TEXT HERE](http://img.youtube.com/vi/2XtvhMY9kGs/0.jpg)](http://www.youtube.com/watch?v=2XtvhMY9kGs)
 
 ---
 
