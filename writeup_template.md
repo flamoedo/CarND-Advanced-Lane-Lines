@@ -87,9 +87,11 @@ I verified that my perspective transform was working as expected by drawing the 
 
 ![alt text][image4]
 
-#### 4. Describe how (and identify where in your code) you identified lane-line pixels and fit their positions with a polynomial?
+#### 4. Identified lane-line pixels and fit their positions with a polynomial.
 
-Then I did some other stuff and fit my lane lines with a 2nd order polynomial kinda like this:
+Then in cell 16 of notebook, the function `detect_lanes()` uses a polinomial to draw the lane lines detect on the image.
+There are also a fuction called `detect_lanes_next_frame()`, that is used after the firt detection, to improve the performance retricting the search area.
+Wen the lines become not parallel, the first detection is applied again. This process can be seen in the line 378 of the file `detect_lanes.py`
 
 ![alt text][image5]
 
