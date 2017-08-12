@@ -22,8 +22,8 @@ The goals / steps of this project are the following:
 [image2]: ./output_images/thresholds.png "Thresholds"
 [image3]: ./output_images/binary_combo_example.jpg "Binary Example"
 [image4]: ./output_images/warped.png "Warp Example"
-[image5]: ./output_images/lines_detect "Lines Detect"
-[image6]: ./output_images/example_output.jpg "Output"
+[image5]: ./output_images/lines_detect.png "Lines Detect"
+[image6]: ./output_images/result_image.png "Output"
 [video1]: ./output_images/project_video_output.mp4 "Video"
 
 ## [Rubric](https://review.udacity.com/#!/rubrics/571/view) Points
