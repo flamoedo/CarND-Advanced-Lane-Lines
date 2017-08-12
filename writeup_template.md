@@ -118,5 +118,10 @@ Here's a [link to my video result](./output_images/project_video_output.mp4)
 ### Discussion
 
 #### 1. Briefly discuss any problems / issues you faced in your implementation of this project.  Where will your pipeline likely fail?  What could you do to make it more robust?
-
 Here I'll talk about the approach I took, what techniques I used, what worked and why, where the pipeline might fail and how I might improve it if I were going to pursue this project further.  
+
+There was some problems with detection, and I had to experiment adjusts in many images, and finally I end up creating a start stop function, so I could adjst the parameters, in the problematic areas of the video using cursors (line 274 of `detect_lanes.py`).
+
+There was also to many interferences on detection, I realise this by overllapping the detection image on the original image (line 234 of `detect_lanes.py`), so I had to create masks to clear some parts of the image (line 366 of `detect_lanes.py`).
+
+
