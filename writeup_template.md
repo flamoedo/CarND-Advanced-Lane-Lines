@@ -21,8 +21,8 @@ The goals / steps of this project are the following:
 [image1_1]: ./output_images/undistorted_camera.png "Undistorted Camera"
 [image2]: ./output_images/thresholds.png "Thresholds"
 [image3]: ./output_images/binary_combo_example.jpg "Binary Example"
-[image4]: ./output_images/warped_straight_lines.jpg "Warp Example"
-[image5]: ./output_images/color_fit_lines.jpg "Fit Visual"
+[image4]: ./output_images/warped.png "Warp Example"
+[image5]: ./output_images/lines_detect "Lines Detect"
 [image6]: ./output_images/example_output.jpg "Output"
 [video1]: ./output_images/project_video_output.mp4 "Video"
 
@@ -58,7 +58,7 @@ I used a combination of color and gradient thresholds to generate a binary image
 
 #### 3. Describe how (and identify where in your code) you performed a perspective transform and provide an example of a transformed image.
 
-The code for my perspective transform includes a function called `warper()`, which appears in lines 1 through 8 in the file `example.py` (output_images/examples/example.py) (or, for example, in the 3rd code cell of the IPython notebook).  The `warper()` function takes as inputs an image (`img`), as well as source (`src`) and destination (`dst`) points.  I chose the hardcode the source and destination points in the following manner:
+The code for my perspective transform includes a function called `warp()`, which appears in cell 11 of the notebook.  The `warp()` function takes as inputs an image (`img`) that must be already undistorted by the function `cal_undistort()`.  I chose the hardcode the source and destination points in the following manner:
 
 ```python
 src = np.float32(
